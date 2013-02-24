@@ -1,0 +1,4 @@
+mynewrepo
+=========
+
+my new repo
