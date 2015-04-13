@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Got Something Upworthy?</title>
+		<meta name="form page" content="" />
+		<link rel="stylesheet" href="styles/common.css" />
+		<link rel="stylesheet" href="styles/bootstrap/css/bootstrap-responsive.css" />
+	</head>
+	<body class="">
+		<div id="main" class="main container-narrow">
+			<header class="header">
+				<h1>Got Something Upworthy?</h1>
+			</header>
+			<div class="row content">
+				<div class="class="columns large-8"">
+					<h2>What's the best thing you've seen all week? Anything that we missed?<br />
+					We'd love to know what you think should be featured on Upworthy.</h2>
+					<p>Use the form below to submit your favorite stuff to us for consideration. Thanks in advance for your input!</p>
+				</div>
+				<div class="columns large-8"">
+					<form class="user-form" name="user-form" method="post" onsubmit="validateForm()">
+						<div id="errormsg" class="errormsg row">
+							Wrong!
+						</div>
+						<div class="row email-input">
+							<div class="columns large-6"><label for="email">Email:</label></div>
+							<div class="columns large-6"><input id="email" type="text" name="email"></input></div>
+						</div>
+						<div class="row link-input">
+							<div class="columns large-6"><label for="link">Link:</label></div>
+							<div class="columns large-6"><input id="link" type="text" name=""></input></div>
+						</div>
+						<div class="row source-input">
+							<div class="columns large-6"><label for="source" >Where did you first see this content?</label></div>
+							<div id="source" class="radio-list"> 
+								<label for="radio-fb">Facebook</label> 
+								<input type="radio" id="radio-fb" name="radios" value="all" checked>
+								
+								<label for="radio-twi">Twitter</label>
+								<input type="radio" id="radio-twi" name="radios"value="false">
+
+								<label for="radio-yt">Youtube</label>
+								<input type="radio" id="radio-yt" name="radios" value="true">
+								
+								<label for="radio-red">Reddit</label>
+								<input type="radio" id="radio-red" name="radios" value="true">
+								
+								<label for="radio-self">I made it myself</label>
+								<input type="radio" id="radio-self" name="radios" value="true">
+							</div>
+							<div class="columns large-6 other">
+								<label for="other">Other</label>
+								<div class="columns large-6"><input id="other" type="text" name=""></input></div>
+							</div>
+							<div class="row">
+							    <div class="large-16 columns">
+                                    <button type="submit" id="ssubmitBtn" class="button"><span>Submit</span></button>
+                                </div>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer id="globalfooter" class="footer">
+			<nav class="footer">
+				2015
+			</nav>
+		</footer>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="styles/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
